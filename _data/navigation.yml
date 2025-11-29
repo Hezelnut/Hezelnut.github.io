@@ -5,8 +5,11 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
-    url: /__post/2025-11-29-test.md/
-  - title: "Sample Collections"
-    url: /collection-archive/
+    url: /__post/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "External Link"
+    url: https://google.com
+    target: _blank

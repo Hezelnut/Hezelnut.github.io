@@ -8,7 +8,7 @@ user:
 ---
 
 {% if page.user %}
-  안녕하세요, {{ user.name }}님!
+  안녕하세요, {{ page.user.name }}님!
 {% endif %}
 
 # {{ page.title }}

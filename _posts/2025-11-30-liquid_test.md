@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Liquid 문법 테스트"
-user: "MSB"
 ---
 
 {% if user %}
@@ -28,6 +27,7 @@ user: "MSB"
 
 user:"SeungBo, Moon" 했는데
 user.name은 왜 안나왔지
+user: "MSB" 실패
 
 
 레이아웃 : post << 들어가서 모양이 이상해짐 다른 레이아웃도 시도해볼 것

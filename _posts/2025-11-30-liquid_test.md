@@ -3,11 +3,11 @@ tags:
   - Liquid
   - test
 user:
-  name:"SeungBo Moon"
-  age:31
+  name: "SeungBo Moon"
+  age: 31 
 ---
 
-{% if user %}
+{% if page.user %}
   안녕하세요, {{ user.name }}님!
 {% endif %}
 
@@ -25,6 +25,7 @@ user:
 - [{{ post.title }}]({{ post.url }}) - {{ post.date | date_to_string }}
 {% endfor %}
 
+{% raw %}
 ```markdown
 test용 코드스페이스
 
@@ -65,4 +66,10 @@ github _posts 에 있는 페이지를 전부 가져올 땐 site.posts
 
 코드블록 내부의 liquid 문법도 읽으려고 하는 오류가 맞을까?
 claude.ai 는 백틱을 넣으라고 함
+-> 실패
+
+마크다운을 raw와 endraw로 감싸기
+if user 를 if page.user로 수정
+콜론 뒤에 빈칸 1개 필수
 ```
+{% endraw %}
